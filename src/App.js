@@ -25,6 +25,7 @@ function App() {
       const response = await fetch("https://ipapi.co/json/");
       const data = await response.json();
       setLocation(data);
+      console.log("data from app.js",data);
       //remove the following line if you can get nasaimage working correctly
       setJohnsUrl(
         `https://api.nasa.gov/planetary/earth/imagery?lon=${data.longitude}&lat=${data.latitude}&date=${date}&dim=0.15&api_key=3NtWYSssmWY8dkk4jUjVGfzEq40EnpFKAmXff1yb`
@@ -43,7 +44,7 @@ function App() {
       {/* remove the url from NasaImage if you can get nasaimage working correctly */}
       <NasaImage location={location} url={johnsUrl} /> 
       <Weather location={location} />
-      <Restaurants location={location} />
+      <Restaurants lat={location.latitude} lon={location.longitude}/>
     </div>
   );
 }
