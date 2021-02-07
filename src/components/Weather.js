@@ -1,5 +1,5 @@
 const Weather=(props)=>{
-    console.log("Weather ran")
+    
     return(
         <div>
                         <h1>This is the Weather component</h1>
