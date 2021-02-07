@@ -1,5 +1,4 @@
 const Restaurants=(props)=>{
-    console.log("Weather ran")
     return(
         <div>
             <h1>This is the restaurants component</h1>

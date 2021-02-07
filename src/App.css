@@ -1,8 +1,16 @@
 .App {
   text-align: center;
+  background-color: rgb(183, 206, 206);
 }
 
-img{
+.nasa{
   width:500px;
-  height:500px
+  height:700px;
+  margin:auto;
+}
+
+.nasa img{
+  justify-content: center;
+  align-items: center;
+  width:100%;
 }
