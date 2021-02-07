@@ -44,7 +44,7 @@ function App() {
       {/* remove the url from NasaImage if you can get nasaimage working correctly */}
       <NasaImage location={location} url={johnsUrl} /> 
       <Weather location={location} />
-      <Restaurants lat={location.latitude} lon={location.longitude}/>
+      {location?<Restaurants lat={location.latitude} lon={location.longitude}/>:<></>}
     </div>
   );
 }
