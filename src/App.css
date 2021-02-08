@@ -1,3 +1,55 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+nav .nav-link{
+  display: flex;
+  justify-content: space-around;
+  width: 32%;
+}
+
+nav .nav-link a{
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+nav .nav-link a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+
 .App {
   text-align: center;
+  background-color: rgb(183, 206, 206);
+}
+
+.nasa{
+  width:500px;
+  height:700px;
+  margin:auto;
+}
+
+.nasa img{
+  justify-content: center;
+  align-items: center;
+  width:100%;
 }

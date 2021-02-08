@@ -1,7 +1,6 @@
 import React from 'react'; // The import needed to build a react app, needed for the React.StrictMode> component
 import ReactDOM from 'react-dom'; // The import needed for appending the React component to the DOM
 
-
  /* we added a dependency react-router-dom,
     this allows for use to define routes in our app easier, it was also renamed from BrowserRouter -> Router
 */
