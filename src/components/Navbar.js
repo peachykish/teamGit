@@ -8,13 +8,13 @@ import Restaurants from "./Restaurants";
 const Navbar = (props) => {
   
   return (
-    <div>
-      <div>
+    <div >
+      <div className="nav-bar">
         <ul className="nav-link">
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/nasa">NASA</Link></li>
-          <li><Link to="/weather">Weather</Link></li>
-          <li><Link to="/restaurant">Restaurant</Link></li>
+          <li><Link className="link-text" to="/home">Home</Link></li>
+          <li><Link className="link-text" to="/nasa">NASA</Link></li>
+          <li><Link className="link-text" to="/weather">Weather</Link></li>
+          <li><Link className="link-text" to="/restaurant">Restaurant</Link></li>
         </ul>
       </div>
       <div className="navbar-route">

@@ -32,7 +32,8 @@ const Restaurants=(props)=>{
         return <div onChange={()=>useEffect}>Loading...</div>
     } else {
         return (
-            <div><ul>
+            <div>
+                <h1>Here are some resturants near you.</h1><ul className="restaurant-list">
             {restaurants[0].restaurants.map((item)=>(
                 <li key={item.restaurant.id}>{item.restaurant.name}</li>
             ))}

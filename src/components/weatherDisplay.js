@@ -3,7 +3,7 @@ import React from 'react';
 const WeatherDisplay = ({temp, label, degree}) => {
     return (
         <div>
-            <div>{label}: {temp} {degree}</div>
+            <h2>{label}: {temp} {degree}</h2>
         </div>
     )
 }

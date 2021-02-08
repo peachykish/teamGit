@@ -6,10 +6,8 @@ import {
   Card,
   CardBody,
   CardTitle,
-  CardText,
   CardFooter,
   CardSubtitle,
-  CardHeader,
   Button,
 } from "reactstrap";
 
@@ -47,7 +45,7 @@ const Weather = (props) => {
               throw new Error('No Fetch Data');
           }
           else{
-              console.log("url",url);
+              console.log(json);
               setTemp(json.main.temp);
               setCounty(json.name);
               setIsLoaded(true);
@@ -70,7 +68,7 @@ const Weather = (props) => {
 } else {
   return (
     <div>
-      <h1>This is the Weather component</h1>
+      <h1>Here's the current temperature for your location.</h1>
       <h2>Latitude: {lat}</h2>
       <h2>Longitude: {lon}</h2>
       <Row>
@@ -79,7 +77,7 @@ const Weather = (props) => {
             <CardTitle>
               <h4>Local Weather</h4>
             </CardTitle>
-            <CardSubtitle>for: {!county ? null : county} County</CardSubtitle>
+            <CardSubtitle>for: {!county ? null : county}</CardSubtitle>
             <CardBody>
               <Button outline block onClick={showFahrenheit}>
                 Fahrenheit
