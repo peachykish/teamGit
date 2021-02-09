@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 // adding css to jsx is that easy
 import "./App.css"; // This pattern is preferred where css for this component has a matching .css filename
 
@@ -30,7 +29,7 @@ function App() {
       );
     };
     fetchLocation();
-  }, []);
+  }, [date]);
 
   // All functional components need to return jsx with one parent element
   return (
